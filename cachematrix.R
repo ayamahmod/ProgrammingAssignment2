@@ -1,7 +1,8 @@
 ##The follwoing function makes cached matrix
 ##set the matrix, get the matrix, set its inverse, get its inverse
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) 
+{
     m <- NULL #inverse of the matrix
     set <- function(y) {
         x <<- y
@@ -19,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## The following function returns the matrix inverse, 
 ##if not calculated: calculate it, return it & cache it
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(x, ...) 
+{
     ## Return a matrix that is the inverse of 'x'
     m <- x$getInv() #get inverse to check if calculated
     if(!is.null(m)) {
